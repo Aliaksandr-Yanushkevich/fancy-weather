@@ -388,6 +388,20 @@ h1 {
   }
 }
 
+@media (max-width: 550px) {
+  .forecast {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  .day {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .tommorowTemp, .tommorow1Temp, .tommorow2Temp {
+    font-size: 1.5rem;
+  }
+}
+
 @media (max-width: 350px) {
   .gps {
     font-size: 0.95rem;
