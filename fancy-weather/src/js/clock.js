@@ -21,10 +21,10 @@ export function clock() {
   document.getElementsByClassName(
     "clock"
   )[0].innerHTML = `${APIDay}, ${APIHour}:${APIMinute}`;
-  MyClock();
+  startClock();
 }
 
-export function MyClock() {
+export function startClock() {
   // recursive function start https://www.youtube.com/watch?v=puxkpNbCh0w;
   setTimeout(clock, 1000);
 }
