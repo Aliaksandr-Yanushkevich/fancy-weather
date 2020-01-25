@@ -1,7 +1,7 @@
 export async function darksky() {
     const latitude = sessionStorage.getItem('latitude');
     const longitude = sessionStorage.getItem('longitude');
-    const Skycons = require('../../node_modules/skycons/skycons')(window); //  Если работаем с node (локальный сервер и т.п.) то передаем global, а если с браузером то глобальный объект window
+    const Skycons = require('skycons')(window); //  Если работаем с node (локальный сервер и т.п.) то передаем global, а если с браузером то глобальный объект window
     // Эта анонимная функция, вызванная с глобальным объектом, уже возвращает наш класс Skycons
     const lang = localStorage.getItem('lang');
     const key = '8c9668e919cbdfe759fda91c7498ad66';

@@ -1,4 +1,4 @@
-import { getSeason } from './getSeason';
+import { getSeason } from '../forecast/getSeason';
 
 export async function getBackground(season, dayTime, currentlyIcon) {
     try {
@@ -48,6 +48,5 @@ export async function getBackground(season, dayTime, currentlyIcon) {
                 break;
         }
         document.body.style.backgroundSize = 'cover';
-        console.clear(); // little trick with 'there are no errors in the console at any stage of the application' requerment
     }
 }
