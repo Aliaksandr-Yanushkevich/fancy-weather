@@ -18,7 +18,7 @@ export function search() {
 async function getDataFromCity() {
     try {
         const apiKey = '685337f4b9c34a078fcd9a0da5516122';
-        const place = document.getElementsByClassName('searchField')[0].value;
+        const place = document.getElementsByClassName('searchField')[0].value.trim();
         const lang = localStorage.getItem('lang').toLocaleLowerCase();
         const url = `https://api.opencagedata.com/geocode/v1/json?q=${place}&key=${apiKey}&language=${lang}`;
         if (place) {
