@@ -252,6 +252,11 @@ h1 {
 }
 
 @media (max-width: 1180px) {
+  .weatherWrapper,
+  .locationWrapper {
+    padding: 10px;
+  }
+
   .buttBlock {
     margin-left: 2%;
   }
@@ -265,7 +270,7 @@ h1 {
   }
 
   .weatherPropTemp {
-    font-size: 6rem;
+    font-size: 5rem;
   }
 
   .locationWrapper {
@@ -295,8 +300,6 @@ h1 {
 
   .weatherPropTemp {
     width: 40%;
-
-    font-size: 5rem;
   }
 }
 
@@ -389,6 +392,10 @@ h1 {
 }
 
 @media (max-width: 550px) {
+  .weatherPropTemp {
+    font-size: 5rem;
+  }
+
   .forecast {
     flex-direction: column;
     margin-top: 30px;
@@ -405,6 +412,9 @@ h1 {
 }
 
 @media (max-width: 350px) {
+  .weatherPropTemp {
+    font-size: 4rem;
+  }
   .gps {
     flex-direction: column;
     font-size: 1.2rem;
